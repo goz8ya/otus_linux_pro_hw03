@@ -1,0 +1,118 @@
+vagrant up
+Bringing machine 'mdadm' up with 'virtualbox' provider...
+==> mdadm: Importing base box 'generic/ubuntu2204'...
+==> mdadm: Matching MAC address for NAT networking...
+==> mdadm: Setting the name of the VM: mdadm
+==> mdadm: Clearing any previously set network interfaces...
+==> mdadm: Preparing network interfaces based on configuration...
+    mdadm: Adapter 1: nat
+==> mdadm: Forwarding ports...
+    mdadm: 22 (guest) => 2222 (host) (adapter 1)
+==> mdadm: Running 'pre-boot' VM customizations...
+==> mdadm: Booting VM...
+==> mdadm: Waiting for machine to boot. This may take a few minutes...
+    mdadm: SSH address: 127.0.0.1:2222
+    mdadm: SSH username: vagrant
+    mdadm: SSH auth method: password
+    mdadm: Warning: Connection reset. Retrying...
+    mdadm: Warning: Connection aborted. Retrying...
+    mdadm: Warning: Connection reset. Retrying...
+    mdadm: Warning: Connection aborted. Retrying...
+    mdadm: Warning: Connection aborted. Retrying...
+==> mdadm: Machine booted and ready!
+==> mdadm: Checking for guest additions in VM...
+    mdadm: The guest additions on this VM do not match the installed version of
+    mdadm: VirtualBox! In most cases this is fine, but in rare cases it can
+    mdadm: prevent things such as shared folders from working properly. If you see
+    mdadm: shared folder errors, please make sure the guest additions within the
+    mdadm: virtual machine match the version of VirtualBox you have installed on
+    mdadm: your host and reload your VM.
+    mdadm:
+    mdadm: Guest Additions Version: 6.1.38
+    mdadm: VirtualBox Version: 7.0
+==> mdadm: Setting hostname...
+==> mdadm: Running provisioner: shell...
+    mdadm: Running: inline script
+    mdadm: mdadm: Unrecognised md component device - /dev/sdb
+    mdadm: mdadm: Unrecognised md component device - /dev/sdc
+    mdadm: mdadm: Unrecognised md component device - /dev/sdd
+    mdadm: mdadm: Unrecognised md component device - /dev/sde
+    mdadm: mdadm: Unrecognised md component device - /dev/sdf
+    mdadm: mdadm: layout defaults to left-symmetric
+    mdadm: mdadm: layout defaults to left-symmetric
+    mdadm: mdadm: chunk size defaults to 512K
+    mdadm: mdadm: size set to 5237760K
+    mdadm: mdadm: Defaulting to version 1.2 metadata
+    mdadm: mdadm: array /dev/md0 started.
+    mdadm: Personalities : [linear] [multipath] [raid0] [raid1] [raid6] [raid5] [raid4] [raid10]
+    mdadm: md0 : active raid5 sdf[4] sde[3] sdd[2] sdc[1] sdb[0]
+    mdadm:       20951040 blocks super 1.2 level 5, 512k chunk, algorithm 2 [5/5] [UUUUU]
+    mdadm:       [>....................]  resync =  0.0% (28/5237760) finish=2727.9min speed=28K/sec
+    mdadm:
+    mdadm: unused devices: <none>
+    mdadm: mkdir: cannot create directory ‘/etc/mdadm/’: File exists
+    mdadm: Information: You may need to update /etc/fstab.
+    mdadm:
+    mdadm: Information: You may need to update /etc/fstab.
+    mdadm:
+    mdadm: Information: You may need to update /etc/fstab.
+    mdadm:
+    mdadm: Information: You may need to update /etc/fstab.
+    mdadm:
+    mdadm: Information: You may need to update /etc/fstab.
+    mdadm:
+    mdadm: mke2fs 1.46.5 (30-Dec-2021)
+Creating filesystem with 1047040 4k blocks and 262144 inodes
+    mdadm: Filesystem UUID: a9d10d09-0b17-4fe8-ba31-aaa8e2fc3a1e
+    mdadm: Superblock backups stored on blocks:
+    mdadm:      32768, 98304, 163840, 229376, 294912, 819200, 884736
+    mdadm:
+    mdadm: Allocating group tables: done
+    mdadm: Writing inode tables: done
+    mdadm: Creating journal (16384 blocks): done
+    mdadm: Writing superblocks and filesystem accounting information: done
+    mdadm:
+    mdadm: mke2fs 1.46.5 (30-Dec-2021)
+    mdadm: Creating filesystem with 1047552 4k blocks and 262144 inodes
+    mdadm: Filesystem UUID: 1ffb4890-8e53-457b-a42b-893e3423b927
+    mdadm: Superblock backups stored on blocks:
+    mdadm:      32768, 98304, 163840, 229376, 294912, 819200, 884736
+    mdadm:
+    mdadm: Allocating group tables: done
+    mdadm: Writing inode tables: done
+    mdadm: Creating journal (16384 blocks): done
+    mdadm: Writing superblocks and filesystem accounting information: done
+    mdadm:
+    mdadm: mke2fs 1.46.5 (30-Dec-2021)
+    mdadm: Creating filesystem with 1047552 4k blocks and 262144 inodes
+    mdadm: Filesystem UUID: 6bf988a6-aba4-4f7a-86d6-7bb364d0dcd3
+    mdadm: Superblock backups stored on blocks:
+    mdadm:      32768, 98304, 163840, 229376, 294912, 819200, 884736
+    mdadm:
+    mdadm: Allocating group tables: done
+    mdadm: Writing inode tables: done
+    mdadm: Creating journal (16384 blocks): done
+    mdadm: Writing superblocks and filesystem accounting information: done
+    mdadm:
+    mdadm: mke2fs 1.46.5 (30-Dec-2021)
+    mdadm: Creating filesystem with 1047552 4k blocks and 262144 inodes
+    mdadm: Filesystem UUID: 2151792a-88c4-468d-ad4f-aa041924eeb1
+    mdadm: Superblock backups stored on blocks:
+    mdadm:      32768, 98304, 163840, 229376, 294912, 819200, 884736
+    mdadm:
+    mdadm: Allocating group tables: done
+    mdadm: Writing inode tables: done
+    mdadm: Creating journal (16384 blocks): done
+    mdadm: Writing superblocks and filesystem accounting information: done
+    mdadm:
+    mdadm: mke2fs 1.46.5 (30-Dec-2021)
+    mdadm: Creating filesystem with 1047040 4k blocks and 262144 inodes
+    mdadm: Filesystem UUID: 7c901ac4-fc84-4c58-a872-1a14bb377c3c
+    mdadm: Superblock backups stored on blocks:
+    mdadm:      32768, 98304, 163840, 229376, 294912, 819200, 884736
+    mdadm:
+    mdadm: Allocating group tables: done
+    mdadm: Writing inode tables: done
+    mdadm: Creating journal (16384 blocks): done
+    mdadm: Writing superblocks and filesystem accounting information: done
+    mdadm:
